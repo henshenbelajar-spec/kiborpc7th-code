@@ -1,9 +1,51 @@
-*.pcd
+# =============================
+# Kibo RPC - .gitignore
+# =============================
+
+# --- ROS Build Artifacts ---
 build/
 devel/
+.catkin_workspace
+
+# --- Simulation & Log Output ---
 share/
 reports/
+*.bag
+*.log
+*.pcd
+
+# --- Large Archives (submission/backup) ---
+*.tar.gz
+*.zip
+*.tar
+
+# --- Python Cache ---
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
 .pytest_cache/
+*.egg-info/
+
+# --- Backup & Local Files ---
 src_local_backup/
 ff_msgs
+*_BACKUP_*
+
+# --- Docker ---
+*.img
+*.iso
+
+# --- IDE & OS ---
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- catkin workspace build output ---
+users/catkin_ws/build/
+users/catkin_ws/devel/
+users/catkin_ws/bootstrap/
